@@ -135,7 +135,7 @@ ENV/
 # Rope project settings
 .ropeproject
 
-# .idea/ no longer excluded
+.idea/
 
 test/test/data/generated
 
