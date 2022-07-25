@@ -28,7 +28,9 @@ You'll learn how to
 * Connect your Pico W to the Internet
 * Control a LED via a web page
 * Install MicroPython Packages using `upip`
-* Build a simple weather station and connect it to the Internet using MQTT
+* Build a webserver on the Pico that will allow you to buzz a remote a buzzer.
+  * Great for summoning family members for meals, chores or interesting TV programs.
+* Build a simple weather station and connect it to the Internet using MQTT.
 
 ### Hardware you'll need
 
