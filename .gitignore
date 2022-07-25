@@ -137,5 +137,7 @@ ENV/
 
 .idea/
 
-test/test/data/generated
+src/secrets.py
+
+
 
