@@ -15,7 +15,6 @@ light_levels = [65, 60, 55, 50, 45, 40, 35, 30, 25]
 
 # convert voltage [0-65535] to light level [0-9]
 def convert_to_light_level(adcv: int) -> int:
-    print(adcv)
     for (i, level) in enumerate(light_levels):
         if adcv > 1000 * level:
             return i+1
