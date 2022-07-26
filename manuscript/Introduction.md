@@ -28,19 +28,20 @@ You'll learn how to
 * Connect your Pico W to the Internet
 * Control a LED via a web page
 * Install MicroPython Packages using `upip`
-* Build a webserver on the Pico that will allow you to buzz a remote a buzzer.
+* Build a webserver on the Pico that will allow you to buzz a remote buzzer.
   * Great for summoning family members for meals, chores or interesting TV programs.
 * Build a simple weather station and connect it to the Internet using MQTT.
 
 ### Hardware you'll need
 
 If you want to try the mini-weather station project, you'll need a few extra 
-electronic components, detailed below. I've added a table with links to the products on Pimoroni and Adafruit, but 
-of course you can buy them from the vendor of your choice. They are all widely available.
+electronic components, detailed below.
+I'll add a table with links to vendors that supply the parts, but 
+stock changes daily, and you may have to order from more than one vendor.
 
-At the time of writing, you will have to do a little soldering for the weather station project. You'll need to 
-solder headers onto the Pico so that you can plug it into a breadboard. A version of the Pico W with headers has been 
-announced, but it's not yet available. 
+At the time of writing, you will have to do a little soldering. You'll need to 
+solder headers onto the Pico so that you can plug it into a breadboard.
+A version of the Pico W with headers has been announced, but it's not yet available.
 
 You'll find a [guide to soldering](https://learn.adafruit.com/adafruit-guide-excellent-soldering) 
 on the Adafruit website and a guide to soldering headers in
@@ -51,19 +52,16 @@ Headers for the Pico
 A breadboard
 Jump wires to connect stuff up
 A TMP36 thermometer sensor
-A Photosensor (there are several possibilities)
-A 10K Ohm Resistor.
+A Photosensor (there are several possibilities detailed below)
+A buzzer
 Access to a soldering iron, and some solder.
 
 ### The breadboard
 
-The weather station project is very simple, You can use any size of breadboard, including the very compact and 
-inexpensive 170-point versions.
+You can build the projects on a half-size breadboard.
 
-![image](http://images.rareschool.com/img/2568161e-0a9a-11ed-93be-0b3de4b72aa8-bb170.png)
-
-If you're planning to use the Pico or Pico W a lot, I recommend the monkmakes Pico 
-BB as it has a guide to the Pico pin functions on the board - a great time-saver!
+I recommend the monkmakes Pico BB as it has a guide to the Pico pin functions on the board.
+It's a great time-saver!
 
 ![image](http://images.rareschool.com/img/4da9380a-0a9b-11ed-93be-0b3de4b72aa8-monk-pico-bb.jpg)
 
@@ -82,19 +80,31 @@ Make sure they are male-to-male wires as that's what you'll need for the breadbo
 This is an inexpensive analogue temperature sensor which is really easy to use. Details in Chapter 5.
 
 
+### Something to measure the light level
 
-### An LDR
+I used to use an [LDR](https://en.wikipedia.org/wiki/Photoresistor)
+(Light dependent resistor, or Photoresistor) to measure light levels.
+Then I asked my friends at Pimoroni why they no longer sell them.
+Here's what they explained.
 
-You can use an [LDR]() (Light dependent resistor) to measure light levels, The weather station uses is to measure 
-sunlight.
+Most LDRs  use CdS (Cadmium Sulphide), and Cadmium is nasty stuff. 
+It's prohibited under the RoHS regulations.
+It's toxic, and I'm not going to use it for future projects.
 
-### The 10K resistor
+There are several possible solutions. At the time of writing I have tested a circuit that uses a red LED with two 
+BC337 transistors.
 
-You'll connect this to the LDR to act as a [voltage divider](). (More about that in chapter 5).
+It works, and it's inexpensive, but it takes up a lot of space on the breadboard, is fiddly to wire up, and not 
+all vendors sell the transistors I used.
 
-You won't be able to buy a single resistor, but they don't cost much and spares will be useful. If you 
-thiok you're going to get bitten by the Pico bug, you might consider getting a resistor kit which will keep you 
-going for quite a while,
+I'll add other designs once I have tested them.
+
+Details in Chapter 5.
+
+### A buzzer
+
+The remote buzzer project uses a buzzer
+
 
 ### Soldering Kit
 
