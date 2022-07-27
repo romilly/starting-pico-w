@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:taxo="http://purl.org/rss/1.0/modules/taxonomy/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+	<channel>
+		<title>rpilocator.com</title>
+		<link>https://rpilocator.com</link>
+		<description>Find Raspberry Pi Computers in Stock</description>
+		<lastBuildDate>Wed, 27 Jul 2022 11:45:17 GMT</lastBuildDate>
+		<image>
+			<url>https://rpilocator.com/favicon.png</url>
+			<title>rpilocator.com</title>
+			<link>https://rpilocator.com/</link>
+			<width>32</width>
+			<height>32</height>
+		</image>
+		<item>
+			<title>Stock Alert (DE): RPi CM4 - 1GB RAM, 8GB MMC, With Wifi is In Stock at Reichelt</title>
+			<description>Stock Alert (DE): RPi CM4 - 1GB RAM, 8GB MMC, With Wifi is In Stock at Reichelt</description>
+			<link>https://rpilocator.com?vendor=reichelt&amp;utm_source=feed&amp;utm_medium=rss</link>
+			<category>reichelt</category>
+			<category>DE</category>
+			<category>CM4</category>
+			<guid isPermaLink="false">99DF43D4-83FF-4C06-94B459E6EB8767AC</guid>
+			<pubDate>Wed, 27 Jul 2022 11:45:17 GMT</pubDate>
+		</item>
+		<item>
+			<title>Stock Alert (FR): RPi 4 Model B - 2GB RAM is In Stock at Kubii</title>
+			<description>Stock Alert (FR): RPi 4 Model B - 2GB RAM is In Stock at Kubii</description>
+			<link>https://rpilocator.com?vendor=kubii&amp;utm_source=feed&amp;utm_medium=rss</link>
+			<category>kubii</category>
+			<category>FR</category>
+			<category>PI4</category>
+			<guid isPermaLink="false">4EC6E256-96D6-4E26-B11531A91771DC9A</guid>
+			<pubDate>Wed, 27 Jul 2022 07:21:20 GMT</pubDate>
+		</item>
+		<item>
+			<title>Stock Alert (NL): RPi 4 Model B - 2GB RAM is In Stock at Elektronica Voor Jou</title>
+			<description>Stock Alert (NL): RPi 4 Model B - 2GB RAM is In Stock at Elektronica Voor Jou</description>
+			<link>https://rpilocator.com?vendor=elektronica&amp;utm_source=feed&amp;utm_medium=rss</link>
+			<category>elektronica</category>
+			<category>NL</category>
+			<category>PI4</category>
+			<guid isPermaLink="false">C1468FDA-AE5A-4E21-9DE5BEB5622B1F37</guid>
+			<pubDate>Tue, 26 Jul 2022 13:16:32 GMT</pubDate>
+		</item>
+		<item>
+			<title>Stock Alert (NL): RPi 4 Model B - 2GB RAM is In Stock at Elektronica Voor Jou</title>
+			<description>Stock Alert (NL): RPi 4 Model B - 2GB RAM is In Stock at Elektronica Voor Jou</description>
+			<link>https://rpilocator.com?vendor=elektronica&amp;utm_source=feed&amp;utm_medium=rss</link>
+			<category>elektronica</category>
+			<category>NL</category>
+			<category>PI4</category>
+			<guid isPermaLink="false">CB88157F-19C1-453B-BC09D77C2F57A624</guid>
+			<pubDate>Tue, 26 Jul 2022 12:52:05 GMT</pubDate>
+		</item>
+		<item>
+			<title>Stock Alert (CH): RPi CM4 - 4GB RAM, 8GB MMC, With Wifi is In Stock at Pi-Shop</title>
+			<description>Stock Alert (CH): RPi CM4 - 4GB RAM, 8GB MMC, With Wifi is In Stock at Pi-Shop</description>
+			<link>https://rpilocator.com?vendor=pishopch&amp;utm_source=feed&amp;utm_medium=rss</link>
+			<category>pishopch</category>
+			<category>CH</category>
+			<category>CM4</category>
+			<guid isPermaLink="false">3B84DC3E-D500-4CBD-8BE8B62FBC579407</guid>
+			<pubDate>Tue, 26 Jul 2022 00:02:34 GMT</pubDate>
+		</item>
+		<item>
+			<title>Stock Alert (CH): RPi CM4 - 4GB RAM, 16GB MMC, With Wifi is In Stock at Pi-Shop</title>
+			<description>Stock Alert (CH): RPi CM4 - 4GB RAM, 16GB MMC, With Wifi is In Stock at Pi-Shop</description>
+			<link>https://rpilocator.com?vendor=pishopch&amp;utm_source=feed&amp;utm_medium=rss</link>
+			<category>pishopch</category>
+			<category>CH</category>
+			<category>CM4</category>
+			<guid isPermaLink="false">FA3CF747-E10F-4283-BECF24D2EA88AA54</guid>
+			<pubDate>Tue, 26 Jul 2022 00:02:33 GMT</pubDate>
+		</item>
+		<item>
+			<title>Stock Alert (CA): RPi CM4 - 1GB RAM, 32GB MMC, No Wifi is In Stock at Pishop 150 units in stock.</title>
+			<description>Stock Alert (CA): RPi CM4 - 1GB RAM, 32GB MMC, No Wifi is In Stock at Pishop 150 units in stock.</description>
+			<link>https://rpilocator.com?vendor=pishopca&amp;utm_source=feed&amp;utm_medium=rss</link>
+			<category>pishopca</category>
+			<category>CA</category>
+			<category>CM4</category>
+			<guid isPermaLink="false">45B0F5B7-03A7-4334-988097BD28B72261</guid>
+			<pubDate>Mon, 25 Jul 2022 18:40:25 GMT</pubDate>
+		</item>
+		<item>
+			<title>Stock Alert (NL): RPi 4 Model B - 2GB RAM is In Stock at Elektronica Voor Jou</title>
+			<description>Stock Alert (NL): RPi 4 Model B - 2GB RAM is In Stock at Elektronica Voor Jou</description>
+			<link>https://rpilocator.com?vendor=elektronica&amp;utm_source=feed&amp;utm_medium=rss</link>
+			<category>elektronica</category>
+			<category>NL</category>
+			<category>PI4</category>
+			<guid isPermaLink="false">0BEACD99-3376-4A36-B4E9D049A7FE2191</guid>
+			<pubDate>Mon, 25 Jul 2022 17:02:55 GMT</pubDate>
+		</item>
+		<item>
+			<title>Stock Alert (NL): RPi 4 Model B - 2GB RAM is In Stock at Elektronica Voor Jou</title>
+			<description>Stock Alert (NL): RPi 4 Model B - 2GB RAM is In Stock at Elektronica Voor Jou</description>
+			<link>https://rpilocator.com?vendor=elektronica&amp;utm_source=feed&amp;utm_medium=rss</link>
+			<category>elektronica</category>
+			<category>NL</category>
+			<category>PI4</category>
+			<guid isPermaLink="false">CCC8CE92-DFB8-4344-AE833A5314477AC0</guid>
+			<pubDate>Mon, 25 Jul 2022 16:03:40 GMT</pubDate>
+		</item>
+		<item>
+			<title>Stock Alert (NL): RPi 4 Model B - 2GB RAM is In Stock at RaspberryStore</title>
+			<description>Stock Alert (NL): RPi 4 Model B - 2GB RAM is In Stock at RaspberryStore</description>
+			<link>https://rpilocator.com?vendor=raspberrystore&amp;utm_source=feed&amp;utm_medium=rss</link>
+			<category>raspberrystore</category>
+			<category>NL</category>
+			<category>PI4</category>
+			<guid isPermaLink="false">9977466F-4ACE-4650-907B47BF74849227</guid>
+			<pubDate>Mon, 25 Jul 2022 14:18:05 GMT</pubDate>
+		</item>
+		<item>
+			<title>Stock Alert (NL): RPi 4 Model B - 2GB RAM is In Stock at RaspberryStore</title>
+			<description>Stock Alert (NL): RPi 4 Model B - 2GB RAM is In Stock at RaspberryStore</description>
+			<link>https://rpilocator.com?vendor=raspberrystore&amp;utm_source=feed&amp;utm_medium=rss</link>
+			<category>raspberrystore</category>
+			<category>NL</category>
+			<category>PI4</category>
+			<guid isPermaLink="false">FFB8140B-1EAC-4F21-AA1F935F554EA080</guid>
+			<pubDate>Mon, 25 Jul 2022 14:04:34 GMT</pubDate>
+		</item>
+		<item>
+			<title>Stock Alert (JP): RPi 4 Model B - 4GB RAM is In Stock at Switch Science</title>
+			<description>Stock Alert (JP): RPi 4 Model B - 4GB RAM is In Stock at Switch Science</description>
+			<link>https://rpilocator.com?vendor=switchjp&amp;utm_source=feed&amp;utm_medium=rss</link>
+			<category>switchjp</category>
+			<category>JP</category>
+			<category>PI4</category>
+			<guid isPermaLink="false">D4A7852B-7EAB-4EA3-9931602EA2A3F036</guid>
+			<pubDate>Mon, 25 Jul 2022 11:18:18 GMT</pubDate>
+		</item>
+		<item>
+			<title>Stock Alert (JP): RPi 4 Model B - 4GB RAM is In Stock at Switch Science</title>
+			<description>Stock Alert (JP): RPi 4 Model B - 4GB RAM is In Stock at Switch Science</description>
+			<link>https://rpilocator.com?vendor=switchjp&amp;utm_source=feed&amp;utm_medium=rss</link>
+			<category>switchjp</category>
+			<category>JP</category>
+			<category>PI4</category>
+			<guid isPermaLink="false">6AA9FCFC-1661-48D8-ACF5601B0BF52AA1</guid>
+			<pubDate>Mon, 25 Jul 2022 11:16:02 GMT</pubDate>
+		</item>
+		<item>
+			<title>Stock Alert (JP): RPi 4 Model B - 4GB RAM is In Stock at Switch Science</title>
+			<description>Stock Alert (JP): RPi 4 Model B - 4GB RAM is In Stock at Switch Science</description>
+			<link>https://rpilocator.com?vendor=switchjp&amp;utm_source=feed&amp;utm_medium=rss</link>
+			<category>switchjp</category>
+			<category>JP</category>
+			<category>PI4</category>
+			<guid isPermaLink="false">B8EF04E5-7FDE-4ADE-9B9891CB1D2C6644</guid>
+			<pubDate>Mon, 25 Jul 2022 11:13:47 GMT</pubDate>
+		</item>
+		<item>
+			<title>Stock Alert (JP): RPi 4 Model B - 4GB RAM is In Stock at Switch Science</title>
+			<description>Stock Alert (JP): RPi 4 Model B - 4GB RAM is In Stock at Switch Science</description>
+			<link>https://rpilocator.com?vendor=switchjp&amp;utm_source=feed&amp;utm_medium=rss</link>
+			<category>switchjp</category>
+			<category>JP</category>
+			<category>PI4</category>
+			<guid isPermaLink="false">DA88BB87-E201-41A1-A6803CED1B65AC43</guid>
+			<pubDate>Mon, 25 Jul 2022 11:11:31 GMT</pubDate>
+		</item>
+		<item>
+			<title>Stock Alert (JP): RPi 4 Model B - 4GB RAM is In Stock at Switch Science</title>
+			<description>Stock Alert (JP): RPi 4 Model B - 4GB RAM is In Stock at Switch Science</description>
+			<link>https://rpilocator.com?vendor=switchjp&amp;utm_source=feed&amp;utm_medium=rss</link>
+			<category>switchjp</category>
+			<category>JP</category>
+			<category>PI4</category>
+			<guid isPermaLink="false">F65E9F07-7971-436C-86F8240C02B67BD4</guid>
+			<pubDate>Mon, 25 Jul 2022 11:09:12 GMT</pubDate>
+		</item>
+		<item>
+			<title>Stock Alert (JP): RPi 4 Model B - 4GB RAM is In Stock at Switch Science</title>
+			<description>Stock Alert (JP): RPi 4 Model B - 4GB RAM is In Stock at Switch Science</description>
+			<link>https://rpilocator.com?vendor=switchjp&amp;utm_source=feed&amp;utm_medium=rss</link>
+			<category>switchjp</category>
+			<category>JP</category>
+			<category>PI4</category>
+			<guid isPermaLink="false">F9E1444C-A160-427A-B9E01AD016184C7F</guid>
+			<pubDate>Mon, 25 Jul 2022 11:06:56 GMT</pubDate>
+		</item>
+		<item>
+			<title>Stock Alert (JP): RPi 4 Model B - 4GB RAM is In Stock at Switch Science</title>
+			<description>Stock Alert (JP): RPi 4 Model B - 4GB RAM is In Stock at Switch Science</description>
+			<link>https://rpilocator.com?vendor=switchjp&amp;utm_source=feed&amp;utm_medium=rss</link>
+			<category>switchjp</category>
+			<category>JP</category>
+			<category>PI4</category>
+			<guid isPermaLink="false">DFDDB93F-7283-41D6-BA8FB90A983285E2</guid>
+			<pubDate>Mon, 25 Jul 2022 11:04:41 GMT</pubDate>
+		</item>
+		<item>
+			<title>Stock Alert (JP): RPi 4 Model B - 4GB RAM is In Stock at Switch Science</title>
+			<description>Stock Alert (JP): RPi 4 Model B - 4GB RAM is In Stock at Switch Science</description>
+			<link>https://rpilocator.com?vendor=switchjp&amp;utm_source=feed&amp;utm_medium=rss</link>
+			<category>switchjp</category>
+			<category>JP</category>
+			<category>PI4</category>
+			<guid isPermaLink="false">8F91B528-D655-4183-BC5C18F197BEB04D</guid>
+			<pubDate>Mon, 25 Jul 2022 11:02:25 GMT</pubDate>
+		</item>
+		<item>
+			<title>Stock Alert (JP): RPi 4 Model B - 8GB RAM is In Stock at Switch Science</title>
+			<description>Stock Alert (JP): RPi 4 Model B - 8GB RAM is In Stock at Switch Science</description>
+			<link>https://rpilocator.com?vendor=switchjp&amp;utm_source=feed&amp;utm_medium=rss</link>
+			<category>switchjp</category>
+			<category>JP</category>
+			<category>PI4</category>
+			<guid isPermaLink="false">69315E0B-B5B9-4FD8-B1D5BEACDF106EA3</guid>
+			<pubDate>Mon, 25 Jul 2022 11:00:11 GMT</pubDate>
+		</item>
+	</channel>
+</rss>
+
