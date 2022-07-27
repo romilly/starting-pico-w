@@ -28,9 +28,10 @@ You'll learn how to
 * Connect your Pico W to the Internet
 * Control a LED via a web page
 * Install MicroPython Packages using `upip`
+* Build a Raspberry Pi Stock detector that tells you when Raspberry Pis are in stock near you.
 * Build a webserver on the Pico that will allow you to buzz a remote buzzer.
   * Great for summoning family members for meals, chores or interesting TV programs.
-* Build a simple weather station and connect it to the Internet using MQTT.
+* Build a simple weather station and connect it to the Internet of Things using MQTT.
 
 ### Hardware you'll need
 
