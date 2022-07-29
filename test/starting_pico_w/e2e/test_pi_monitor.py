@@ -6,7 +6,7 @@ from pi_monitor import Builder
 class PiMonitorTestCase(unittest.TestCase):
     # smoke test - does it build?
     def test_builds_app(self):
-        runner = Builder().build_for_computer()
+        runner = Builder().build()
 
 
 if __name__ == '__main__':
