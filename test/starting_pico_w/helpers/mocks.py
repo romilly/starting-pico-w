@@ -1,4 +1,7 @@
-from pi_finder.abstract_monitor_classes import Clock, Display, RssReader
+from typing import List
+
+from pi_finder.abstract_monitor_classes import Clock, RssReader
+from pi_finder.display import Display
 
 
 class MockClock(Clock):
@@ -7,7 +10,7 @@ class MockClock(Clock):
 
 
 class MockDisplay(Display):
-    def show_alert(self, level: int):
+    def show_alert(self, level: int, alerts: List[str]):
         self.color = level
 
 

@@ -11,6 +11,11 @@ If there's been availability
 Uses Ports and Adapters, so it's easy to stest and easy to change.
 """
 import time
+
+from pi_finder.availability_filter import AvailabilityFilter
+from pi_finder.display import Display
+from typing import List
+
 try:
     import requests
 except:
@@ -18,39 +23,44 @@ except:
     upip.install('urequests')
     import urequests as requests
 
-from pi_finder.abstract_monitor_classes import RssReader, AvailabilityFilter, Display, Clock
-from pi_finder.display import GREEN, RED, YELLOW
+from pi_finder.abstract_monitor_classes import RssReader, Clock
+from pi_finder.colors import GREEN, RED, YELLOW
 from pi_finder.parsed_content import ParsedContent
 from pi_finder.simple_parser import SimpleRSSParser
 
 
 class RecentAvailabilityFilter(AvailabilityFilter):
     def filter_availability(self, content: ParsedContent, time_now: int):
-        if len(content.items) == 0: # nothing available
-            self.display.show_alert(RED)
+        alerts = [item.alert for item in content.items]
+        if len(alerts) == 0: # nothing available
+            self.display.show_alert(RED, alerts)
             return
-        if content.timestamp <= time_now-5*60:
-            self.display.show_alert(RED)
-        elif content.timestamp <= time_now-60:
-            self.display.show_alert(YELLOW)
+        content_timestamp = time.mktime(content.timestamp)
+        if content_timestamp <= time_now-5*60:
+            self.display.show_alert(RED, alerts)
+        elif content_timestamp <= time_now-60:
+            self.display.show_alert(YELLOW, alerts)
         else:
-            self.display.show_alert(GREEN)
+            self.display.show_alert(GREEN, alerts)
 
 URL = 'https://rpilocator.com/feed/'
+
 
 class RequestingRssReader(RssReader):
     def check_rss_feed(self, param):
         result = requests.get(URL)
         if result.status_code != 200:
             raise ValueError('request for %s failed' % URL)
-        return result.content
-
+        self.parser.parse(result.content.decode('UTF8'))
 
 
 class SystemClock(Clock):
     def start_ticking(self):
         while True:
-            time.sleep(60) # so we don't cause problems when testing!
+            # so we don't cause problems when testing!
+            for i in range(60):
+                time.sleep(1)
+                print(i)
             self.rss_reader.check_rss_feed(round(time.time()))
 
 
@@ -82,5 +92,13 @@ class Builder:
         return self
 
 
+class PrintingDisplay(Display):
 
+    def show_alert(self, level: int, alerts: List[str]):
+        print('alert(%d, %s)' % level, alerts)
+
+
+if __name__ == '__main__':
+    builder = Builder().with_display(PrintingDisplay())
+    builder.build().start_ticking()
 

@@ -2,7 +2,7 @@ import unittest
 
 from hamcrest import assert_that
 
-from pi_finder.display import GREEN, YELLOW, RED
+from pi_finder.colors import GREEN, YELLOW, RED
 from pi_finder.pi_monitor import RecentAvailabilityFilter
 from starting_pico_w.helpers.color_matcher import shows
 from starting_pico_w.helpers.mocks import MockDisplay

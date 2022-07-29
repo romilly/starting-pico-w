@@ -1,7 +1,7 @@
 from machine import Pin
 from time import sleep
 
-from pi_finder.abstract_monitor_classes import Display
+from pi_finder.display import Display
 
 
 class LEDDisplay(Display):
@@ -9,7 +9,7 @@ class LEDDisplay(Display):
         Display.__init__(self)
         self.led = Pin("LED", Pin.OUT)
 
-    def show_alert(self, level: int):
+    def show_alert(self, level: int, alerts): # ignore alerts for now
         for i in range(level):
             self.blink()
 

@@ -1,12 +1,15 @@
+import time
+from datetime import datetime
 from io import StringIO
 
+from pi_finder.availability_filter import AvailabilityFilter
 from pi_finder.parsed_content import AvailableItem, ParsedContent
 
 MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
 
 class SimpleRSSParser:
-    def __init__(self, availability_filter):
+    def __init__(self, availability_filter: AvailabilityFilter):
         self.availability_filter = availability_filter
         self.feed = ''
 
@@ -16,7 +19,7 @@ class SimpleRSSParser:
         items = []
         while (item := self.next_item()) is not None:
             items.append(item)
-        return ParsedContent(ts, items)
+        self.availability_filter.filter_availability(ParsedContent(ts, items), datetime.now().timestamp())
 
     def find_tag_contents(self, tag):
         start_tag = '<%s>' % tag
@@ -43,7 +46,10 @@ class SimpleRSSParser:
         month = self.month_number(m)
         year = int(y)
         hour, minute, second  = [int(s) for s in hms.split(':')]
-        return year, month, day, hour, minute, second, 0
+        if len(time.gmtime()) == 9: # Python
+            return year, month, day, hour, minute, second, 0, 0, -1
+        else: # MicroPython
+            return year, month, day, hour, minute, second, 0, 0
 
     def next_item(self):
         alert = self.find_tag_contents('description')
