@@ -1,4 +1,4 @@
-from parsed_content import ParsedContent, AvailableItem
+from pi_finder.parsed_content import ParsedContent, AvailableItem
 
 ALERT = 'Stock Alert (DE): RPi CM4 - 1GB RAM, 8GB MMC, With Wifi is In Stock at Reichelt'
 EPOCH_FOR_27_Jul_2022_11_45_17 = 1658918717

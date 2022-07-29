@@ -2,25 +2,10 @@ import unittest
 
 from hamcrest import assert_that
 
-from abstract_monitor_classes import Display, Clock, RssReader
-from display import GREEN, BLACK, colors
-from pi_monitor import Builder
+from pi_finder.display import GREEN
+from pi_finder.pi_monitor import Builder
 from starting_pico_w.helpers.color_matcher import shows
-
-
-class MockClock(Clock):
-    def start_ticking(self):
-        pass
-
-
-class MockDisplay(Display):
-    def show_alert(self, level: int):
-        self.color = level
-
-
-class MockRssReader(RssReader):
-    def check_rss_feed(self, param):
-        pass
+from starting_pico_w.helpers.mocks import MockDisplay, MockClock, MockRssReader
 
 
 class PiMonitorTestCase(unittest.TestCase):

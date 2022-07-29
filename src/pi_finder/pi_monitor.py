@@ -11,11 +11,17 @@ If there's been availability
 Uses Ports and Adapters, so it's easy to stest and easy to change.
 """
 import time
+try:
+    import requests
+except:
+    import upip
+    upip.install('urequests')
+    import urequests as requests
 
-from abstract_monitor_classes import RssReader, AvailabilityFilter, Display, Clock
-from display import GREEN, RED, YELLOW
-from parsed_content import ParsedContent
-from simple_parser import SimpleRSSParser
+from pi_finder.abstract_monitor_classes import RssReader, AvailabilityFilter, Display, Clock
+from pi_finder.display import GREEN, RED, YELLOW
+from pi_finder.parsed_content import ParsedContent
+from pi_finder.simple_parser import SimpleRSSParser
 
 
 class RecentAvailabilityFilter(AvailabilityFilter):
@@ -30,24 +36,22 @@ class RecentAvailabilityFilter(AvailabilityFilter):
         else:
             self.display.show_alert(GREEN)
 
+URL = 'https://rpilocator.com/feed/'
 
 class RequestingRssReader(RssReader):
     def check_rss_feed(self, param):
-        pass
+        result = requests.get(URL)
+        if result.status_code != 200:
+            raise ValueError('request for %s failed' % URL)
+        return result.content
 
-
-class LEDDisplay(Display):
-    def show_alert(self, level: int):
-        pass
-
-URL = 'https://rpilocator.com/feed/'
 
 
 class SystemClock(Clock):
     def start_ticking(self):
         while True:
+            time.sleep(60) # so we don't cause problems when testing!
             self.rss_reader.check_rss_feed(round(time.time()))
-            time.sleep(60)
 
 
 class Builder:
@@ -60,8 +64,6 @@ class Builder:
         self.rss_reader = None
 
     def build(self) -> Clock:
-        if self.display is None:
-            self.display = LEDDisplay()
         self.rss_filter = RecentAvailabilityFilter(self.display)
         self.parser = SimpleRSSParser(self.rss_filter)
         self.rss_reader = self.rss_reader_class(self.parser)

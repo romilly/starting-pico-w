@@ -1,7 +1,7 @@
 from hamcrest.core.base_matcher import BaseMatcher, T
 from hamcrest.core.description import Description
 
-from display import colors
+from pi_finder.display import colors
 
 
 class ColorMatcher(BaseMatcher):

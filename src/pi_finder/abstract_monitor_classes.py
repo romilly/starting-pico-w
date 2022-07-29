@@ -1,9 +1,12 @@
-from abc import ABC, abstractmethod
 
-from display import colors, BLACK
-from parsed_content import ParsedContent
-from simple_parser import SimpleRSSParser
+from pi_finder.display import colors, BLACK
+from pi_finder.parsed_content import ParsedContent
+from pi_finder.simple_parser import SimpleRSSParser
 
+try:
+    from abc import ABC, abstractmethod
+except:
+    from mp.abc import ABC, abstractmethod
 
 class Display(ABC):
     def __init__(self):

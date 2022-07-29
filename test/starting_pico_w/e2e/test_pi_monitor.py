@@ -1,6 +1,6 @@
 import unittest
 
-from pi_monitor import Builder
+from pi_finder.pi_monitor import Builder
 
 
 class PiMonitorTestCase(unittest.TestCase):

@@ -1,6 +1,6 @@
 from io import StringIO
 
-from parsed_content import AvailableItem, ParsedContent
+from pi_finder.parsed_content import AvailableItem, ParsedContent
 
 MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 

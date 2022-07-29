@@ -2,9 +2,9 @@ import unittest
 
 from hamcrest import assert_that, equal_to
 
-from abstract_monitor_classes import AvailabilityFilter
-from parsed_content import ParsedContent, AvailableItem
-from pi_monitor import SimpleRSSParser
+from pi_finder.abstract_monitor_classes import AvailabilityFilter
+from pi_finder.parsed_content import ParsedContent, AvailableItem
+from pi_finder.pi_monitor import SimpleRSSParser
 from starting_pico_w.helpers.sample_rss import SAMPLE_RSS
 
 
