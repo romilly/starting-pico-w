@@ -1,4 +1,3 @@
-from typing import List
 
 from pi_finder.colors import colors, BLACK
 
@@ -13,7 +12,7 @@ class Display(ABC):
         self.color = BLACK
 
     @abstractmethod
-    def show_alert(self, level: int, alerts: List[str]):
+    def show_alert(self, level: int, alerts):
         pass
 
     def __repr__(self):

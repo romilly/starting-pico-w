@@ -23,7 +23,7 @@ class ParserTestCase(unittest.TestCase):
         self.parser = SimpleRSSParser(self.mock_filter)
 
     def test_parses_rss(self):
-        self.parser.parse(SAMPLE_RSS)
+        self.parser.parse(SAMPLE_RSS, None)
 
         assert_that(self.mock_filter.rss_content,
                     equal_to(ParsedContent(timestamp=(2022, 7, 27, 11, 45, 17, 0, 0, -1),

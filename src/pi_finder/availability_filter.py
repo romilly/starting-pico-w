@@ -1,4 +1,8 @@
-from abc import ABC, abstractmethod
+try:
+    from abc import ABC, abstractmethod
+except:
+    from mp.abc import ABC, abstractmethod
+
 
 from pi_finder.display import Display
 from pi_finder.parsed_content import ParsedContent

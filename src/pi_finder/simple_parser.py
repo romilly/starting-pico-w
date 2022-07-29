@@ -1,5 +1,4 @@
 import time
-from datetime import datetime
 from io import StringIO
 
 from pi_finder.availability_filter import AvailabilityFilter
@@ -13,13 +12,13 @@ class SimpleRSSParser:
         self.availability_filter = availability_filter
         self.feed = ''
 
-    def parse(self, raw_feed: str):
+    def parse(self, raw_feed: str, time_now):
         self.feed = StringIO(raw_feed)
         ts =  self.timestamp()
         items = []
         while (item := self.next_item()) is not None:
             items.append(item)
-        self.availability_filter.filter_availability(ParsedContent(ts, items), datetime.now().timestamp())
+        self.availability_filter.filter_availability(ParsedContent(ts, items), time_now)
 
     def find_tag_contents(self, tag):
         start_tag = '<%s>' % tag

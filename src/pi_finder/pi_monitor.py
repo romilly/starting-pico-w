@@ -14,7 +14,7 @@ import time
 
 from pi_finder.availability_filter import AvailabilityFilter
 from pi_finder.display import Display
-from typing import List
+
 
 try:
     import requests
@@ -43,15 +43,16 @@ class RecentAvailabilityFilter(AvailabilityFilter):
         else:
             self.display.show_alert(GREEN, alerts)
 
-URL = 'https://rpilocator.com/feed/'
+# URL = 'https://rpilocator.com/feed/'
+URL = 'https://hwlocator.com/feed/'
 
 
 class RequestingRssReader(RssReader):
-    def check_rss_feed(self, param):
+    def check_rss_feed(self, time_now: int):
         result = requests.get(URL)
         if result.status_code != 200:
             raise ValueError('request for %s failed' % URL)
-        self.parser.parse(result.content.decode('UTF8'))
+        self.parser.parse(result.content.decode('UTF8'), time_now)
 
 
 class SystemClock(Clock):
@@ -94,8 +95,8 @@ class Builder:
 
 class PrintingDisplay(Display):
 
-    def show_alert(self, level: int, alerts: List[str]):
-        print('alert(%d, %s)' % level, alerts)
+    def show_alert(self, level: int, alerts):
+        print('alert(%d, %s)' % (level, alerts))
 
 
 if __name__ == '__main__':
