@@ -2,7 +2,7 @@
 
 If you're familiar with Python  and you want to start using the new Raspberry Pi Pico W, this guide is for you.
 
-It's a short, free ebook in PDF format. Feel free to give a copy top your friends.
+It's a short, free ebook in PDF format. Feel free to give a copy to your friends.
 
 ## Getting started
 
@@ -19,26 +19,36 @@ You'll need an editor on you computer, and you'll need to have Python installed.
 You can use any editor, but most people staring with the Pico use the free Thonny editor.
 You'll find more detailed advice about choosing, installing and using editors in Appendix A.
 
-TODO: Add appendix
+TODO: Add appendices A, B
 
 ### What you'll learn
 
 You'll learn how to
 * Write and run MicroPython programs on the Pico W
 * Connect your Pico W to the Internet
+* Install extra MicroPython Packages using `upip`
 * Control a LED via a web page
-* Install MicroPython Packages using `upip`
 * Build a Raspberry Pi Stock detector that tells you when Raspberry Pis are in stock near you.
 * Build a webserver on the Pico that will allow you to buzz a remote buzzer.
-  * Great for summoning family members for meals, chores or interesting TV programs.
-* Build a simple weather station and connect it to the Internet of Things using MQTT.
+  * Great for summoning family members for meals, chores or interesting TV programs
+* Build a simple weather station and connect it to the Internet of Things using MQTT
+
+## Using this guide
+
+Several of the sections of this guide will point you to some excellent instructions on the Raspberry Pi and Adafruit websites, so you will need an internet connection when you read the guide.
+
+You may already know how to do some things covered in the guide. Here's a flowchart that will show you which parts you need to read based on your previous experience.
+
+![image](http://images.rareschool.com/img/1b40a8f8-101d-11ed-8568-a39c23c2a191-flowchart.png)
+
 
 ### Hardware you'll need
 
-If you want to try the mini-weather station project, you'll need a few extra 
-electronic components, detailed below.
+You'll need a few extra electronic components, detailed below.
 I'll add a table with links to vendors that supply the parts, but 
-stock changes daily, and you may have to order from more than one vendor.
+
+1. stock changes daily, so you'll need to check availability and 
+2. you may have to order from more than one vendor, which will increase postage costs.
 
 At the time of writing, you will have to do a little soldering. You'll need to 
 solder headers onto the Pico so that you can plug it into a breadboard.
@@ -53,7 +63,7 @@ Headers for the Pico
 A breadboard
 Jump wires to connect stuff up
 A TMP36 thermometer sensor
-A Photosensor (there are several possibilities detailed below)
+A Photo-transistor 
 A buzzer
 Access to a soldering iron, and some solder.
 
@@ -92,19 +102,16 @@ Most LDRs  use CdS (Cadmium Sulphide), and Cadmium is nasty stuff.
 It's prohibited under the RoHS regulations.
 It's toxic, and I'm not going to use it for future projects.
 
-There are several possible solutions. At the time of writing I have tested a circuit that uses a red LED with two 
-BC337 transistors.
+Instead, I now use this photo-transistor from Adafruit, also available from vendors in the UK.
 
-It works, and it's inexpensive, but it takes up a lot of space on the breadboard, is fiddly to wire up, and not 
-all vendors sell the transistors I used.
+![image](http://images.rareschool.com/img/771cc2f8-1016-11ed-8568-a39c23c2a191-board-with-adafuit-led.jpg)
 
-I'll add other designs once I have tested them.
-
-Details in Chapter 5.
 
 ### A buzzer
 
-The remote buzzer project uses a buzzer
+The remote buzzer project uses an 'active' buzzer - one which makes a noise when powered. These are widely available,
+but you'll need to make sure your buzzer works with a 3 V supply. If not, you can build your own mini-breakout board.
+Details in appendix B.
 
 
 ### Soldering Kit

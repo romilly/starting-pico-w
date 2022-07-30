@@ -14,7 +14,7 @@ import time
 
 from pi_finder.availability_filter import AvailabilityFilter
 from pi_finder.display import Display
-
+from pi_finder.publisher import MqttPublisher
 
 try:
     import requests
@@ -43,8 +43,8 @@ class RecentAvailabilityFilter(AvailabilityFilter):
         else:
             self.display.show_alert(GREEN, alerts)
 
-# URL = 'https://rpilocator.com/feed/'
-URL = 'https://hwlocator.com/feed/'
+URL = 'https://rpilocator.com/feed/'
+# URL = 'https://hwlocator.com/feed/'
 
 
 class RequestingRssReader(RssReader):
@@ -100,6 +100,7 @@ class PrintingDisplay(Display):
 
 
 if __name__ == '__main__':
-    builder = Builder().with_display(PrintingDisplay())
+    # builder = Builder().with_display(PrintingDisplay())
+    builder = Builder().with_display(MqttPublisher())
     builder.build().start_ticking()
 
