@@ -28,10 +28,10 @@ You'll learn how to
 * Connect your Pico W to the Internet
 * Install extra MicroPython Packages using `upip`
 * Control a LED via a web page
-* Build a Raspberry Pi Stock detector that tells you when Raspberry Pis are in stock near you.
 * Build a webserver on the Pico that will allow you to buzz a remote buzzer.
   * Great for summoning family members for meals, chores or interesting TV programs
 * Build a simple weather station and connect it to the Internet of Things using MQTT
+* Let people all over the world control your NeoPixels using @cheerligths and MQTT.
 
 ## Using this guide
 
@@ -63,9 +63,11 @@ Headers for the Pico
 A breadboard
 Jump wires to connect stuff up
 A TMP36 thermometer sensor
-A Photo-transistor 
+A Photo-transistor
+Resistors
 A buzzer
-Access to a soldering iron, and some solder.
+A strip of NeoPixels with a three-pin soldered header.
+Access to a soldering iron and some solder.
 
 ### The breadboard
 
@@ -102,7 +104,7 @@ Most LDRs  use CdS (Cadmium Sulphide), and Cadmium is nasty stuff.
 It's prohibited under the RoHS regulations.
 It's toxic, and I'm not going to use it for future projects.
 
-Instead, I now use this photo-transistor from Adafruit, also available from vendors in the UK.
+Instead, I now use this photo-transistor.
 
 ![image](http://images.rareschool.com/img/771cc2f8-1016-11ed-8568-a39c23c2a191-board-with-adafuit-led.jpg)
 
@@ -116,8 +118,17 @@ Details in appendix B.
 
 ### Soldering Kit
 
-You'll find advice on the soldering hardware you need in the 
+You'll find advice on soldering, including the hardware you need in the
+[Pimoroni Soldering Guide](https://learn.pimoroni.com/article/the-ultimate-guide-to-soldering). 
 
-This is a work in progress. I'll post about updates on the website, in [my blog](https://blog.rareschool.com/)
-and as [@RAREblog](https://twitter.com/rareblog) on Twitter.
+
+
+## Status of this project 
+
+This is a work in progress. I'll post about progress and announce availability in
+[my blog](https://blog.rareschool. com/) and as [@RAREblog](https://twitter.com/rareblog) on Twitter.
+
+| Component            | Vendor Links                                                    |
+|----------------------|-----------------------------------------------------------------|
+| Breadboard (Pico BB) | [Pimoroni](), [Adafruit](https://www.adafruit.com/product/5422) |
 

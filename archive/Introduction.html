@@ -1,0 +1,127 @@
+<h1>Should you read this ebook?</h1>
+
+<p>If you're familiar with Python  and you want to start using the new Raspberry Pi Pico W, this guide is for you.</p>
+
+<p>It's a short, free ebook in PDF format. Feel free to give a copy to your friends.</p>
+
+<h2>Getting started</h2>
+
+<h3>What you need to know</h3>
+
+<p>It assumes that you're familiar with the Python language.</p>
+
+<p>It doesn't assume familiarity with electronics or the original Raspberry Pi Pico.</p>
+
+<p>To use the guide you'll need a computer running Windows, Linux (including Raspberry Pi/OS) or Mac/OS.
+You'll also need a Raspberry Pi Pico W and a USB cable to connect the two.</p>
+
+<p>You'll need an editor on you computer, and you'll need to have Python installed.
+You can use any editor, but most people staring with the Pico use the free Thonny editor.
+You'll find more detailed advice about choosing, installing and using editors in Appendix A.</p>
+
+<p>TODO: Add appendices A, B</p>
+
+<h3>What you'll learn</h3>
+
+<p>You'll learn how to
+* Write and run MicroPython programs on the Pico W
+* Connect your Pico W to the Internet
+* Install extra MicroPython Packages using <code>upip</code>
+* Control a LED via a web page
+* Build a webserver on the Pico that will allow you to buzz a remote buzzer.
+  * Great for summoning family members for meals, chores or interesting TV programs
+* Build a simple weather station and connect it to the Internet of Things using MQTT
+* Let people all over the world control your NeoPixels using @cheerligths and MQTT.</p>
+
+<h2>Using this guide</h2>
+
+<p>Several of the sections of this guide will point you to some excellent instructions on the Raspberry Pi and Adafruit websites, so you will need an internet connection when you read the guide.</p>
+
+<p>You may already know how to do some things covered in the guide. Here's a flowchart that will show you which parts you need to read based on your previous experience.</p>
+
+<p><img src="http://images.rareschool.com/img/1b40a8f8-101d-11ed-8568-a39c23c2a191-flowchart.png" alt="image" title="" /></p>
+
+<h3>Hardware you'll need</h3>
+
+<p>You'll need a few extra electronic components, detailed below.
+I'll add a table with links to vendors that supply the parts, but </p>
+
+<ol>
+<li>stock changes daily, so you'll need to check availability and </li>
+<li>you may have to order from more than one vendor, which will increase postage costs.</li>
+</ol>
+
+<p>At the time of writing, you will have to do a little soldering. You'll need to 
+solder headers onto the Pico so that you can plug it into a breadboard.
+A version of the Pico W with headers has been announced, but it's not yet available.</p>
+
+<p>You'll find a <a href="https://learn.adafruit.com/adafruit-guide-excellent-soldering">guide to soldering</a> 
+on the Adafruit website and a guide to soldering headers in
+<em>Get started with MicroPython on Raspberry Pi Pico</em>.</p>
+
+<p>So you'll need
+Headers for the Pico
+A breadboard
+Jump wires to connect stuff up
+A TMP36 thermometer sensor
+A Photo-transistor 
+A buzzer
+A strip of NeoPixels with a three-pin soldered header.
+Access to a soldering iron and some solder.</p>
+
+<h3>The breadboard</h3>
+
+<p>You can build the projects on a half-size breadboard.</p>
+
+<p>I recommend the monkmakes Pico BB as it has a guide to the Pico pin functions on the board.
+It's a great time-saver!</p>
+
+<p><img src="http://images.rareschool.com/img/4da9380a-0a9b-11ed-93be-0b3de4b72aa8-monk-pico-bb.jpg" alt="image" title="" /></p>
+
+<h3>Jump wires</h3>
+
+<p>You'll find offers of inexpensive jump wires all over the internet, and I use them, but they can be a bt unreliable. 
+That's the last thing you want when you're starting out, so I suggest you get jump wires like these:</p>
+
+<p><img src="http://images.rareschool.com/img/02e659f0-0a9c-11ed-93be-0b3de4b72aa8-jumpers-m2m.png" alt="image" title="" /></p>
+
+<p>Make sure they are male-to-male wires as that's what you'll need for the breadboard.</p>
+
+<h3>The TMP36 sensor</h3>
+
+<p>This is an inexpensive analogue temperature sensor which is really easy to use. Details in Chapter 5.</p>
+
+<h3>Something to measure the light level</h3>
+
+<p>I used to use an <a href="https://en.wikipedia.org/wiki/Photoresistor">LDR</a>
+(Light dependent resistor, or Photoresistor) to measure light levels.
+Then I asked my friends at Pimoroni why they no longer sell them.
+Here's what they explained.</p>
+
+<p>Most LDRs  use CdS (Cadmium Sulphide), and Cadmium is nasty stuff. 
+It's prohibited under the RoHS regulations.
+It's toxic, and I'm not going to use it for future projects.</p>
+
+<p>Instead, I now use this photo-transistor from Adafruit, also available from vendors in the UK.</p>
+
+<p><img src="http://images.rareschool.com/img/771cc2f8-1016-11ed-8568-a39c23c2a191-board-with-adafuit-led.jpg" alt="image" title="" /></p>
+
+<h3>A buzzer</h3>
+
+<p>The remote buzzer project uses an 'active' buzzer - one which makes a noise when powered. These are widely available,
+but you'll need to make sure your buzzer works with a 3 V supply. If not, you can build your own mini-breakout board.
+Details in appendix B.</p>
+
+<h3>Soldering Kit</h3>
+
+<p>You'll find advice on soldering, including the hardware you need in the
+<a href="https://learn.pimoroni.com/article/the-ultimate-guide-to-soldering">Pimoroni Soldering Guide</a>. </p>
+
+<h2>Status of this project</h2>
+
+<p>This is a work in progress. I'll post about progress and announce availability in
+<a href="https://blog.rareschool. com/">my blog</a> and as <a href="https://twitter.com/rareblog">@RAREblog</a> on Twitter.</p>
+
+<p>| Component            | Vendor Links                                                    |
+|----------------------|-----------------------------------------------------------------|
+| Breadboard (Pico BB) | <a href="">Pimoroni</a>, <a href="https://www.adafruit.com/product/5422">Adafruit</a> |</p>
