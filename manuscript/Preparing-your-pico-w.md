@@ -20,23 +20,29 @@ Here's an annotated image of the front.
 
 1. The two lines of holes at the top and bottom of the board are for power and GPIO (General Purpose I/O) 
 connections. You'll solder header pins in those holes.
-2. The connector at the side is the USB port which you'll connet to your hsot computer when you want to program the 
+2. The connector at the side is the USB port which you'll connect to your host computer when you want to program the 
    Pico W.
-3. The button marked `bootsel` is used to put the Pico in to bootsel mode. You'll use that when you need to install 
-   or re-install MicroPython.
+3. The button marked `bootsel` is used to put the Pico in to bootsel mode. You can use that when you need to install 
+   or re-install MicroPython, although you'll also learn an alternative approach.
 
-There are two things you'll need to do to prepare your Pico W for use.
+There are three things you'll need to do to prepare your Pico W for use.
 
-The first is to install MicroPython on your Pico W. If you've done this before for the original Pico, the process is 
-the same, but you will need to make sure you use the correct version of MicroPython. The version for the original Pico 
+1. Install the software you'll be using on your computer
+2. Install MicroPython on the Pico W
+3. 
+
+The se is to install MicroPython on your Pico W. If you've done this before for the original Pico, the process is 
+the same, but you will need to make sure you **use the correct version of MicroPython**. The version for the original Pico 
 lacks the features you will need to connect to the Internet.
 
 ## Installing MicroPython
 
-You'll find simple, clear instructions on the
-[Raspberry Pi Website](https://www.raspberrypi.com/documentation/microcontrollers/micropython.html)
+You'll need to 
+1. Download the [latest version](https://micropython.org/download/rp2-pico-w/rp2-pico-w-latest.uf2) of MicroPython for 
+   the Pico W from the MicroPython Website. Save the `uf2` file and make a note of the location where you saved the 
+   file.
+2. 
 
-Next, you'll need to solder the headers.
 
 
 
