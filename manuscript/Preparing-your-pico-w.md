@@ -1,5 +1,10 @@
 # Preparing your Pico W
 
+If you've met the Pico before, you'll probably know abut soldering headers and programming the Pico from your computer.
+
+It's still worth reading the section _Save time with mpremote_. `mpremote` is useful program from the MicroPyton team 
+that can simplify installation and testing of MicroPython and the code you write for it.
+
 ## Getting familiar with the Pico W
 
 You'll need to know your way around the Pico.
@@ -42,7 +47,7 @@ TNext you'll need to install MicroPython on your Pico W. If you've done this bef
 same process will work, but you will need to make sure you **use the correct version of MicroPython**. The version for 
 the original Pico lacks the features you will need to connect to the Internet.
 
-### Installing MicroPython the standard way
+### Install MicroPython the standard way
 
 You'll need to 
 1. Download the [latest version](https://micropython.org/download/rp2-pico-w/rp2-pico-w-latest.uf2) of MicroPython for 
@@ -53,6 +58,8 @@ You'll need to
 4. Release the bootsel button. A new external drive called RP2-   drive will appear.
 5. Drag the `uf2` file onto the external drive. It will copy over and then the drive will disappear. Your Pico W in 
    now ready for some MicroPython programming.
+
+### Save time with mpremote
 
 
 
